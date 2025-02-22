@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "PAC No Chat",
+    "version": "1.0",
+    "description": "Removes chat from Pokemon Auto Chess.",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.pokemon-auto-chess.com/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://www.pokemon-auto-chess.com/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "16": "icon16.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "icon16.png",
+            "32": "icon32.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        },
+    "default_title": "Remove Chat Container"
+    }
+}
